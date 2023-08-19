@@ -1,0 +1,14 @@
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\bin\Debug\net6.0\Template.DAL.deps.json
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\bin\Debug\net6.0\Template.DAL.dll
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\bin\Debug\net6.0\Template.DAL.pdb
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.csproj.AssemblyReference.cache
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.AssemblyInfoInputs.cache
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.AssemblyInfo.cs
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.csproj.CoreCompileInputs.cache
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.dll
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\refint\Template.DAL.dll
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.pdb
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\ref\Template.DAL.dll
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\bin\Debug\net6.0\Template.DAL.runtimeconfig.json
+D:\Programming\ASP.NET Core\Template\Template\Template.DAL\obj\Debug\net6.0\Template.DAL.genruntimeconfig.cache

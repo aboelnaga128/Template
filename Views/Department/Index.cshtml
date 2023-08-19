@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Template.BL.Models.departmentVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link href="~/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+<link href="~/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+<h2>Department</h2>
+ 
+<a asp-controller="department" asp-action="create" class="btn btn-primary">create new department</a>
+
+
+
+
+<table class="table table-hover table-bordered table-striped text-center ">
+
+
+    <thead>
+        <tr class="table-dark">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Details</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td><a asp-controller="department" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a></td>
+                <td><a asp-controller="department" asp-action="Update"  asp-route-id="@item.Id" class="btn btn-warning">Update</a></td>
+                <td><a asp-controller="department" asp-action="Delete"  asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+                
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* 
+<ul>
+    @foreach (var item in @ViewBag.Names )
+    {
+        <li>@item</li>
+        
+    }
+</ul>
+
+    
+
+<select>
+    <option>
+        Choose Name 
+    </option>
+    @foreach (var item in @ViewBag.Names)
+    {
+        <option>@item</option>
+        
+    }
+</select>
+
+
+<input  placeholder="Search On Name" list="mylist"/>
+<datalist id="mylist">
+        @foreach (var item in @ViewBag.Names)
+        {
+        <option>@item</option>
+
+        }
+</datalist>
+
+*@
+@*
+<div class="block-header">
+    <h2>@ViewData["x"]</h2>
+ 
+    <h2>@ViewBag.y</h2>
+
+    <h2>@TempData["z"]</h2>
+</div>
+*@

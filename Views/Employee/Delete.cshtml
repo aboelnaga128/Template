@@ -1,0 +1,137 @@
+﻿@model Template.BL.Models.EmployeeVM
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+<h2>Welcome to Delete page </h2>
+
+
+
+<form asp-controller="Employee" asp-action="Delete" method="post" class="form-group">
+
+
+    <input type="text" asp-for="Id" readonly />
+
+
+    <label asp-for="Name">Employee Name </label>
+    <input asp-for="Name" type="text" placeholder="Enter your Employee Name" class="form-control" readonly />
+    <br />
+
+
+    <label asp-for="salary"> Salary </label>
+    <input asp-for="salary" type="text" placeholder="Enter your Employee Salary" class="form-control" readonly />
+    <br />
+
+    <label asp-for="HireDate"> Hire Date </label>
+    <input asp-for="HireDate" type="text" placeholder="Enter your Employee Hire Date " class="form-control" readonly />
+    <br />
+
+    <label asp-for="Notes"> Notes </label>
+    <textarea asp-for="Notes" placeholder="Notes" class="form-control" rows="3" readonly></textarea>
+    <br />
+
+    <label asp-for="Email"> Email </label>
+    <input asp-for="Email" type="email" placeholder="Enter your Employee Email" class="form-control" readonly />
+    <br />
+    @*
+    <label asp-for="IsDeleted"> IsDeleted </label>
+    <input asp-for="IsDeleted" type="text" placeholder="Enter your Employee IsDeleted" class="form-control" />
+    <span asp-validation-for="IsDeleted" class="text-danger"></span>
+    <br/>
+    *@
+
+    <label asp-for="IsUpdated"> IsUpdated </label>
+    <input asp-for="IsUpdated" type="text" placeholder="Enter your Employee IsUpdated" class="form-control" readonly />
+    <br />
+    @*
+    <label asp-for="IsActive"> IsActive </label>
+    <input asp-for="IsActive" type="text" placeholder="Enter your Employee IsActive" class="form-control" />
+    <span asp-validation-for="IsActive" class="text-danger"></span>
+    <br />
+    *@
+    <div class="demo-checkbox">
+        <input type="checkbox" readonly></input>
+        <label asp-for="IsActive">IsActive</label>
+    </div>
+    <br />
+
+
+    @*
+    <label asp-for="CreationDate"> CreationDate </label>
+    <input asp-for="CreationDate" type="date" placeholder="Enter your Employee CreationDate" class="form-control" />
+    <span asp-validation-for="CreationDate" class="text-danger"></span>
+    <br />
+    *@
+    <label asp-for="DeletedDate"> DeletedDate </label>
+    <input asp-for="DeletedDate" type="text" placeholder="Enter your Employee DeletedDate" class="form-control" readonly />
+    <br />
+
+
+
+    <label asp-for="DepartmentID"> DepartmentID</label>
+    <select asp-for="DepartmentID" asp-items="(SelectList)ViewBag.DepartmentList" readonly>
+        <option>Choose Department</option>
+
+    </select>
+    <br />
+
+
+
+
+
+
+
+
+
+    @*
+
+    <label asp-for="Department.Name"> Department</label>
+    <input asp-for="Department.Name" type="text" placeholder="Enter your Employee Department" class="form-control" />
+    <span asp-validation-for="Department.Name" class="text-danger"></span>
+    <br />
+    *@
+    <center>
+        <input type="submit" value="Delete" class="btn btn-primary" />
+    </center>
+</form>
+
+
+
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script src="~/plugins/jquery-validation/jquery.validate.js"></script>
+<script src="~/plugins/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+
+@*
+<form action="/Department/craete" method="post" class="form-group">
+    <label>Department Name </label>
+    <input  name ="dname" type="text" placeholder="Enter your Department Name" class ="form-control"/>
+    <br />
+    <center>
+        <input type="submit" value="Save" class="btn btn-primary"/>
+    </center>
+</form>
+
+*@
+
+@*
+@using(Html.BeginForm())
+{
+
+}
+*@
+
+
+
+
+
+<@*div class="block-header">
+       <h2>@ViewData["x"]</h2>
+       <h2>@ViewBag.y</h2>
+       <h2>@TempData["z"]</h2>
+       </div>
+       *@

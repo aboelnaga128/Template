@@ -1,0 +1,67 @@
+﻿@model Template.BL.Models.departmentVM
+@{
+    ViewData["Title"] = "create";
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+<h2>Welcome to create page </h2>
+
+
+
+<form asp-controller="department" asp-action="create" method="post" class="form-group">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+
+
+    <label asp-for="Name">Department Name </label>
+    <input asp-for="Name" type="text" placeholder="Enter your Department Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
+    <center>
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </center>
+</form>
+
+
+
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script src="~/plugins/jquery-validation/jquery.validate.js"></script>
+<script src="~/plugins/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+
+@*
+<form action="/Department/craete" method="post" class="form-group">
+    <label>Department Name </label>
+    <input  name ="dname" type="text" placeholder="Enter your Department Name" class ="form-control"/>
+    <br />
+    <center>
+        <input type="submit" value="Save" class="btn btn-primary"/>
+    </center>
+</form>
+
+*@
+
+@*
+@using(Html.BeginForm())
+{
+
+}
+*@
+
+
+
+
+
+<@*div class="block-header">
+    <h2>@ViewData["x"]</h2>
+
+    <h2>@ViewBag.y</h2>
+
+    <h2>@TempData["z"]</h2>
+</div>
+
+*@
